@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- <script src="assets/js/lib/jquery-3.5.1.min.js" charset="utf-8"></script> -->
+  </head>
+  <body>
+    <div id="container">
+      <h1>Saving Calculator</h1>
+
+      <div id="savings">
+          <p id="save-one">How much do you want to save?</p>
+        <div class="style-input">
+          <input id="goal-amount" type="text" placeholder="Goal">
+          <label>Goal</label>
+          <div class="req-mark">$</div>
+          <span></span>
+        </div>
+
+        <p id="saving-term">For how long?</p>
+        <div class="select">
+          <select id="year">
+            <option selected disabled="0">Select term</option>
+            <option value="1">1 year</option>
+            <option value="2">2 years</option>
+            <option value="3">3 years</option>
+            <option value="4">4 years</option>
+            <option value="5">5 years</option>
+            <option value="6">6 years</option>
+            <option value="7">7 years</option>
+            <option value="8">8 years</option>
+            <option value="9">9 years</option>
+            <option value="10">10 years</option>
+          </select>
+          <br>
+        </div>
+
+
+        <p id="saving-method">Select saving method.</p>
+        <div class="select">
+          <select id="saving-type">
+            <option selected disabled="0">Select type</option>
+            <option value="1">Daily</option>
+            <option value="2">Weekly</option>
+            <option value="3">Montly</option>
+          </select>
+        </div>
+
+        <br>
+        <p id="save-two">You need to save $<span id="payment">00</span> per <span id="type">D/W/M</span> to reach your goal.</p>
+        <button id="calculate" type="button">Calculate</button>
+        <button id="reset" type="button" name="button">Reset</button>
+      </div>
+    </div>
+
+
+    <script src="assets/js/cal.js" charset="utf-8"></script>
+  </body>
+</html>
